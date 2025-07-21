@@ -1,1 +1,79 @@
-templates/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🐯 MANI LEGEND PANEL</title>
+  <style>
+    body {
+      background: url('https://i.imgur.com/fU1rP0S.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: monospace;
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .container {
+      background-color: rgba(0,0,0,0.8);
+      display: inline-block;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #0ff;
+    }
+    h1 {
+      font-size: 24px;
+      color: #00ffea;
+      text-shadow: 0 0 5px red;
+    }
+    input[type="file"], input[type="text"] {
+      padding: 8px;
+      margin: 8px 0;
+      width: 90%;
+      border-radius: 5px;
+      background: #111;
+      color: #0f0;
+      border: 1px solid #0ff;
+    }
+    button {
+      padding: 12px 20px;
+      background: red;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #ccc;
+    }
+    .dp {
+      width: 100px;
+      border-radius: 50%;
+      border: 3px solid #0ff;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.imgur.com/x0TQO7e.png" alt="Tiger DP" class="dp">
+    <h1>🐯 MANI LEGEND - DAKU 302</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      Token.txt: <input type="file" name="token"><br>
+      Convo.txt: <input type="file" name="convo"><br>
+      file.txt (msg file name): <input type="file" name="file"><br>
+      hatersname.txt: <input type="file" name="hatersname"><br>
+      time.txt: <input type="file" name="time"><br>
+      password.txt: <input type="file" name="password"><br><br>
+      <button type="submit">🚀 RUN MANI SCRIPT</button>
+    </form>
+    <div class="footer">
+      Powered by MANIXAI 🧠🔥<br>
+      Facebook | WhatsApp | Tiger Vibe
+    </div>
+  </div>
+</body>
+</html>
